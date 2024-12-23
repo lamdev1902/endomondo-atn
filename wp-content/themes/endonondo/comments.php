@@ -27,9 +27,9 @@ $aria_req = $req ? " aria-required='true'" : '';
 	<div id="write-comment">
 		<div class="section-header flex">
 			<p id="add-comment-title" class="h1 has-medium-font-size"><?= get_comments_number() ?> Comments</p>
-			<a href="#" id="">Post Comments</a>
+			<a href="#" id="postCmt">Post Comments</a>
 		</div>
-		<div class="grid">
+		<div class="grid form-grid hide">
 			<div class="grid-item large--three-fifths push--large--one-fifth">
 				<?php
 				$fields = array(
@@ -56,7 +56,7 @@ $aria_req = $req ? " aria-required='true'" : '';
 					'title_reply' => __(''),
 					'comment_notes_before' => '',
 					'title_reply_to' => __('Để lại một bình luận tới %s'),
-					'cancel_reply_link' => __('Hủy trả lời'),
+					'cancel_reply_link' => __('Cancel'),
 					'label_submit' => __('Submit'),
 					'format' => 'xhtml',
 					'fields' => $fields,
@@ -71,10 +71,13 @@ $aria_req = $req ? " aria-required='true'" : '';
 	<ul class="commentlist">
 		<?php wp_list_comments('type=comment&callback=mytheme_comment'); ?>
 	</ul>
-
+	
+	<?php if (comments_open() && get_comments_number() > 2 && post_type_supports(get_post_type(), 'comments')): ?>
 	<div class="seeAll">
-		<a href="" id="">See all comments</a>
+		<a href="" id="seeCmt">See all comments</a>
 	</div>
+	<?php endif;?>
+
 	<?php
 	if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')):
 		?>

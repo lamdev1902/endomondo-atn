@@ -1,3 +1,59 @@
+<?php
+$app = get_field('intro_app', 'option');
+if (!empty($app[0])):
+	$app = $app[0];
+	if (!empty($app['title'])) {
+		if (strpos($app['title'], 'Enfit') !== false) {
+			$app['title'] = str_replace('Enfit', '<strong>Enfit</strong>', $app['title']);
+		}
+	}
+
+	if (!empty($app['discount'])) {
+		$app['discount'] = preg_replace('/(\d+%)/', '<strong>$1</strong>', $app['discount']);
+	}
+	$storeLink = get_field('footer_store', 'option');
+	$explore = !empty($app['explore']) ? $app['explore'] : '';
+	$store = $storeLink ?: '';
+	?>
+
+	<section class="app-section mb">
+		<div class="container">
+			<div class="content app-content">
+				<?php if (!empty($app['title'])): ?>
+					<p class="has-x-large-font-size"><?= $app['title'] ?></p>
+				<?php endif; ?>
+				<?php if (!empty($app['description'])): ?>
+					<p><?= $app['description'] ?></p>
+				<?php endif; ?>
+				<div class="enfit-action mr-bottom-20 flex">
+					<?php if ($explore): ?>
+						<a href="<?= $explore ?>" id="">Explore Now</a>
+					<?php endif; ?>
+					<?php if ($store): ?>
+						<a target="_blank" href="<?= $store ?>" class="home-store">
+							<img src="<?= get_template_directory_uri() . '/assets/images/enfit/store.svg' ?>" alt="">
+						</a>
+					<?php endif; ?>
+				</div>
+				<?php if (!empty($app['discount'])): ?>
+					<p class="discount"><?= $app['discount'] ?></p>
+				<?php endif; ?>
+				<?php
+				$socials = get_field('follow_social', 'option');
+				if ($socials):
+					?>
+					<div class="social flex">
+						<p class="has-small-font-size pri-color-2" style="margin-bottom: 0">Follow us: </p>
+						<?php foreach ($socials as $social): ?>
+							<a target="_blank" href="<?php echo $social['link']; ?>"><img alt="<?= $social['icon']['alt']; ?>"
+									src="<?= $social['icon']['url']; ?>" /></a>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
 <footer id="footer">
 	<div class="ft-top">
 		<div class="container list-flex flex-two">
@@ -49,8 +105,8 @@
 				<?php
 				$copyright = get_field('footer_bottom', 'option');
 				$yearc = date('Y');
-				$text= str_replace("%year%", $yearc, $copyright);?>
-				<p class="has-small-font-size pri-color-3"><?=$text;?></p>
+				$text = str_replace("%year%", $yearc, $copyright); ?>
+				<p class="has-small-font-size pri-color-3"><?= $text; ?></p>
 			</div>
 			<div class="item-flex">
 				<?php
@@ -66,14 +122,15 @@
 </footer>
 </div>
 <div class="modalcn-bg" style="display: none;"></div>
-<?php 
-	$post_type = get_field('cra_with_cpt','option');
-	if(in_array( get_post_type(), $post_type) == true) include "hcfunction/customer-feedback.php";
+<?php
+$post_type = get_field('cra_with_cpt', 'option');
+if (in_array(get_post_type(), $post_type) == true)
+	include "hcfunction/customer-feedback.php";
 ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/slick/slick.js"></script>
 <script type="text/javascript"
 	src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/custom.js?v=1.2.3"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/custom.js?v=1.2.4"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/rating.js?ver=1.0.0"></script>
 <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RG9krj"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>

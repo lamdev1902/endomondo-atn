@@ -1,8 +1,9 @@
 <?php
 $ads = get_field('ads_enfit', 'option');
 $intro = get_field('intro_app', 'option');
+$storeLink = get_field('ads_store', 'option');
 $explore = !empty($intro[0]['explore']) ? $intro[0]['explore'] : '';
-$store = !empty($intro[0]['store']) ? $intro[0]['store'] : '';
+$store = $storeLink ?: '';
 
 if ($ads):
     ?>
