@@ -1639,3 +1639,19 @@ h2.tag-coming {
     display: block;
     margin: 0 auto;
 }
+
+#write-comment {
+    margin-bottom: 20px;
+}
+
+.form-grid.hide {
+    display: none;
+}
+
+.form-grid:not(hide) {
+    margin-bottom: 20px;
+}
+
+#comments .grid-item {
+    margin-bottom: 0;
+}

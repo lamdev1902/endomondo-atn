@@ -36,6 +36,10 @@ jQuery(function ($) {
 
 
 	jQuery(document).ready(function ($) {
+		$('#postCmt').click(function(e){
+			e.preventDefault();
+			$(".form-grid").toggleClass('hide');
+		});
 
 		$(".single-main .sg-resources > h3").on('click', function() {
 			$(this).siblings("ol").slideToggle();
