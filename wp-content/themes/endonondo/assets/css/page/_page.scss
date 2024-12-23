@@ -1,0 +1,36 @@
+.page-main{
+	padding: 40px 0 80px;
+	margin: 0 auto;
+	max-width: 848px;
+	.ed-title{
+		font-size: 36px;
+		line-height: 44px;
+	}
+	.page-custom{
+		h3{
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 16px;
+			font-weight: 600;
+			margin-top: 40px;
+		}
+		p{
+			margin-bottom: 16px;
+			font-size: 14px;
+			line-height: 22px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.page-main{
+		padding: 40px 0;
+		.ed-title{
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+}

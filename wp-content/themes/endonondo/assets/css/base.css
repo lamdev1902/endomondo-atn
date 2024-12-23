@@ -1,0 +1,482 @@
+:root {
+
+    /* Primary Color */
+
+    --primary-color-1: #87AA14;
+    --primary-color-2: #000000;
+    --primary-color-3: #FFFFFF;
+
+    /* Secondary Color */
+
+    --secondary-color-1: #EEEEEE;
+    --secondary-color-2: #D4D5D4;
+    --secondary-color-3: #9F9F9F;
+    --secondary-color-4: #404040;
+    --secondary-color-5: #f8f8f8;
+
+    /* Text Color */
+    --text-color-heading: #FFFCF1;
+    --text-color-body: #FFF9E2;
+
+    /* Chart Color */
+    --chart-100: #87AA14;
+    --chart-60: #B6CF66;
+    --chart-40: #CFE7AC;
+    --chart-20: #E6EFD9;
+
+    /* Font size */
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-15: 15px;
+    --font-16: 16px;
+    --font-17: 17px;
+    --font-18: 18px;
+    --font-20: 20px;
+    --font-22: 22px;
+    --font-24: 24px;
+    --font-26: 26px;
+    --font-28: 28px;
+    --font-32: 32px;
+    --font-36: 36px;
+    --font-48: 48px;
+
+    /* margin */
+
+    --mr-main: 20px;
+    
+
+    --ratio: 16 / 9;
+}
+
+
+strong,
+b {
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: var(--mr-main)
+}
+
+h1 {
+    font-size: var(--font-32) !important;
+    letter-spacing: 0;
+    line-height: 38px !important;
+    font-weight: 600 !important;
+}
+
+h2 {
+    font-size: var(--font-24) !important;
+    letter-spacing: 0px;
+    line-height: 30px !important;
+    font-weight: 500 !important;
+}
+
+h3 {
+    font-size: var(--font-22) !important;
+    letter-spacing: 0px;
+    line-height: 28px !important;
+    font-weight: 500 !important;
+}
+
+h4 {
+    font-size: var(--font-20) !important;
+    letter-spacing: 0px;
+    line-height: 26px !important;
+    font-weight: 500 !important;
+}
+
+h4:has(+ ul),
+h4:has(+ ol) {
+    margin-bottom: 8px;
+}
+
+/* color */
+.pri-color-1 {
+    color: var(--primary-color-1) !important;
+}
+
+.pri-color-2 {
+    color: var(--primary-color-2) !important;
+}
+
+.pri-color-3 {
+    color: var(--primary-color-3) !important;
+}
+
+.sec-color-1 {
+    color: var(--secondary-color-1) !important;
+}
+
+.sec-color-2 {
+    color: var(--secondary-color-2) !important;
+}
+
+.sec-color-3 {
+    color: var(--secondary-color-3) !important;
+}
+
+.sec-color-4 {
+    color: var(--secondary-color-4) !important;
+}
+
+/*  p element */
+
+.has-x-large-font-size {
+    font-size: var(--font-48) !important;
+    font-weight: 600 !important;
+    line-height: 54px !important;
+    letter-spacing: 0px;
+}
+
+.has-large-font-size {
+    font-size: var(--font-22) !important;
+    font-weight: 500 !important;
+    line-height: 28px !important;
+    letter-spacing: 0px;
+}
+
+.has-medium-font-size {
+    font-size: var(--font-20) !important;
+    font-weight: 500 !important;
+    line-height: 26px !important;
+    letter-spacing: 0px;
+}
+
+p {
+    font-size: var(--font-16) !important;
+    line-height: 24px !important;
+    font-weight: 400;
+    color: var(--primary-color-2);
+    letter-spacing: 0px;
+    margin-bottom: var(--mr-main);
+    margin-top: 0;
+}
+
+.has-small-font-size {
+    font-size: var(--font-14) !important;
+    letter-spacing: 0px;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+}
+
+.has-ssmall-font-size {
+    font-size: var(--font-12) !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+    letter-spacing: 0px;
+}
+
+/* Point */
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    margin-bottom: var(--mr-main);
+}
+
+ul li,
+ol li {
+    font-size: var(--font-16);
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+ul li::marker,
+ol li::marker {
+    color: var(--primary-color-1);
+    font-size: 16px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+.single-main ol,
+.exc-container ol {
+    list-style: decimal;
+}
+
+.single-main ul,
+.single-main ol,
+.author-content ul {
+    padding-left: 18px;
+}
+
+.single-main ul li,
+.exc-container ul li,
+.author-content ul li {
+    position: relative;
+}
+
+.single-main ul.pros-list li,
+.single-main ul.cons-list li {
+    margin-left: 0;
+}
+
+.single-main ul li::before,
+.exc-container ul li::before,
+.author-content ul li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color-1);
+    left: -16px;
+    top: 0.5em;
+    border-radius: 50%;
+}
+
+.single-main ul.pros-list li::before,
+.single-main ul.cons-list li::before {
+    width: 0;
+    height: 0;
+    background: none;
+}
+
+/* special text */
+
+.special-text {
+    font-size: var(--font-24) !important;
+    color: var(--secondary-color-3);
+}
+
+/* padding - margin */
+.pd-main {
+    padding: 40px 0;
+}
+
+.pd-secondary {
+    padding: 20px 0;
+}
+
+.mr-bottom-16 {
+    margin-bottom: 16px;
+}
+
+.mr-top-16 {
+    margin-top: 16px;
+}
+
+.mr-top-20 {
+    margin-top: 20px;
+}
+
+.mr-bottom-20 {
+    margin-bottom: var(--mr-main);
+}
+
+.mr-top-24 {
+    margin-top: 24px;
+}
+
+.mr-top-40 {
+    margin-top: 40px;
+}
+
+.mr-bottom-40 {
+    margin-bottom: 40px;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+/* Handle text */
+
+.text-special {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.text-special.clamp-1 {
+    -webkit-line-clamp: 1;
+}
+
+.text-special.clamp-2 {
+    -webkit-line-clamp: 2;
+}
+
+.text-special.clamp-3 {
+    -webkit-line-clamp: 2;
+}
+
+.text-special.ellipsis {
+    text-overflow: ellipsis;
+}
+
+/* special width */
+
+.special-width {
+    max-width: 776px;
+    margin: auto;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+}
+
+.grid-item {
+    grid-template-columns: repeat(3, 220px);
+    row-gap: 20px;
+    justify-content: space-between;
+    margin-bottom: var(--mr-main);
+}
+
+.grid-feature {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 16px ;
+    justify-content: space-between;
+    margin-bottom: var(--mr-main);
+}
+
+
+.grid-feature .featured,
+.grid-item .featured {
+    margin-bottom: var(--mr-main);
+}
+
+.grid-item .featured {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.grid-item .featured img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid-item .info {
+    text-align: center;
+}
+
+.grid-item .info p:first-of-type {
+    margin-bottom: 8px;
+}
+
+.grid-item .info p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media(max-width: 480px) {
+    .grid-item {
+        grid-template-columns: repeat(2, auto);
+        column-gap: 16px;
+    }
+
+    .grid-feature {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: var(--mr-main);
+    }
+    
+    .grid-item .featured {
+        height: 163px;
+    }
+
+    .grid-feature .featured {
+        height: 187px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 834px) {
+    .grid-item {
+        grid-template-columns: repeat(3, auto);
+        column-gap: 16px;
+    }
+
+    .grid-feature {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 834px) {
+    .grid-feature .featured {
+        height: 187px;
+    }
+}
+
+@media(max-width: 834px) {
+    h1 {
+        font-size: var(--font-26) !important;
+        line-height: 32px !important;
+    }
+
+    h2 {
+        font-size: var(--font-22) !important;
+        line-height: 28px !important;
+    }
+
+    h3 {
+        font-size: var(--font-20) !important;
+        line-height: 26px !important;
+    }
+
+    h4 {
+        font-size: var(--font-18) !important;
+        line-height: 24px !important;
+    }
+
+    .has-x-large-font-size {
+        font-size: var(--font-32) !important;
+        line-height: 38px !important;
+    }
+
+    .has-large-font-size {
+        font-size: var(--font-20) !important;
+        line-height: 26px !important;
+    }
+
+    .has-medium-font-size {
+        font-size: var(--font-18) !important;
+        line-height: 24px !important;
+    }
+
+    p {
+        font-size: var(--font-15) !important;
+        line-height: 23px !important;
+    }
+
+    .has-small-font-size {
+        font-size: var(--font-12) !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+    }
+
+    .has-ssmall-font-size {
+        font-size: 11px !important;
+        line-height: 17px !important;
+    }
+
+    /* Point */
+    ul li,
+    ol li {
+        font-size: var(--font-15);
+        line-height: 23px;
+    }
+
+    ul li::marker,
+    ol li::marker {
+        color: var(--primary-color-1);
+        font-size: var(--font-15);
+    }
+}

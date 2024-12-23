@@ -1,0 +1,9 @@
+.calories-form label.error {
+    display: none !important;
+}
+.calories-form .input-it.error {
+    border-color: #ff0000;
+}
+.fillResult .calories-col ul li.lhide {
+    display: none;
+}

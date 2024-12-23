@@ -1,0 +1,155 @@
+.blog-main{
+	padding: 40px 0 80px;
+	.blog-top{
+		margin-bottom: 64px;
+		&:before{
+			height: 124px;
+			background: #0E1102;
+			left: calc(50vw - 648.5px);
+			right: 0;
+			content: "";
+			position: absolute;
+		}
+		.top-box{
+			position: relative;
+			padding-top: 40px;
+			.info{
+				padding: 0 16px 0 40px;
+				width: 42%;
+				h1{
+					margin-bottom: 64px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 22px;
+					color: #404040;
+
+				}
+			}
+			.featured{
+				width: 58%;
+				align-items: flex-start;
+				.big{
+					width: 73%;
+					padding-right: 16px;
+					max-height: 240px;
+					min-height: 200px;
+				}
+				.small{
+					width: 27%;
+					max-height:168px;
+				}
+				img{
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	.blog-select{
+		margin-bottom: 64px;
+		.news-list{
+			margin: 0 -16px;
+			.news-it{
+				padding: 0 16px;
+				border-right: 1px solid #D4D5D4;
+				width: 33.33%;
+				.featured{
+					height: 218px;
+				}
+				.info{
+					padding: 24px 0 16px;
+					border-bottom: none;
+					h3{
+						font-size: 24px;
+						line-height: 32px;
+						margin: 0 0 16px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+	.blog-all{
+		.ed-title{
+			font-size: 32px;
+			line-height: 39px;
+		}
+		.pagination{
+			margin-top: -16px;
+		}
+	}
+}
+
+@media(max-width: 1279px){
+	.blog-main .blog-top {
+		&:before{
+			left: 16px;
+		}
+		.top-box .info{
+			padding-left: 0;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.blog-main{
+		padding-bottom: 40px;
+		.blog-top {
+			margin-bottom: 40px;
+			&:before{
+				left: 16px;
+				height: 122px;
+			}
+			.top-box {
+				padding-top: 24px;
+				.info{
+					width: 100%;
+					padding: 0;
+					h1{
+						margin-bottom: 24px;
+						padding-left: 24px;
+					}
+				}
+				.featured{
+					width: 100%;
+					padding-left: 60px;
+					.big{
+						width: 100%;
+						padding: 0;
+						min-height: 140px;
+					}
+				}
+				p{
+					padding:16px 0 0 24px;
+					font-size: 14px;
+					line-height: 22px;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.blog-select {
+			margin-bottom: 16px;
+			.news-list .news-it{
+				margin-bottom: 24px;
+				width: 100%;
+				.featured{
+					height: 185px;
+				}
+				.info{
+					border-bottom: 1px solid #D4D5D4;	
+					h3{
+						font-size: 20px;
+						line-height: 1.2;
+					}
+				}
+			}
+		}
+		.blog-all{
+			.ed-title{
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

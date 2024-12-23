@@ -1,0 +1,219 @@
+ .chart-box.box {
+  border: 1px solid #BBBBBB;
+  position: relative;
+  padding: 0 46px;
+  max-width: 100%;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+.chart-box .vertical-text {
+  color: #81838C !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  position: absolute;
+  left:9px;
+  top: 35%;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+.chart-vertical canvas{
+  max-height: 520px;
+  min-height: 300px;
+  padding-left: 30px;
+}
+.chart-box .chart-title{
+  margin: 0 !important;
+  padding: 16px 0 0;
+  text-align: center;
+}
+.chart-box .chart-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin: 0 -30px;
+  padding-top: 22px;
+}
+.chart-box .chart-info .source{
+  color: #81838C !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  margin-bottom: 0 !important;
+  font-family: 'DM Sans' !important;
+}
+.chart-box .chart-info .source b{
+  font-family: 'DM Sans' !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.chart-box .chart-info .design{
+  color: #81838C !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.chart-box .chart-info .design img{
+  height: 26px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+}
+.chart-box .title-x{
+  font-size: 16px  !important;
+  line-height: 24px  !important;
+  color: #81838C !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+  font-weight: 400 !important;
+}
+.chart-pie canvas{
+  max-height: 450px !important;
+}
+.chart-value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 10px;
+}
+.chart-value p{
+  margin-bottom: 0 !important;
+  letter-spacing: 0 !important;
+}
+.chart-value p span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+.chart-horizontal.chart-box .title-x{
+  margin-top: 50px !important;
+  display: none;
+}
+.chart-box.chart-horizontal .chart-info{
+  padding-top: 0;
+  margin-top: 100px;
+}
+.data-column{
+  width: 50px;
+  position: absolute;
+  top: 99px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  left: 50px;
+  color: #101C3D80;
+}
+.chart-box.box.chart-line{
+  padding-left: 14px;
+}
+.chart-line .data-column {
+  top: 95.5px;
+    gap: 26px;;
+}
+.chart-line .data-column span{
+    display: block;
+}
+.chart-line .data-column span:nth-child(4){
+  top: 0.1px;
+    position: relative;
+}
+.chart-line .data-column span:last-child{
+      top: 0.2px;
+    position: relative;
+    border-color: #CECECE;
+}
+.chart-line.chart-box .chart-info{
+  margin: 0;
+}
+.chart-line.chart-box .vertical-text{
+  top: 23%;
+}
+.chart-box.chart-horizontal .chart-title{
+	margin-bottom: 30px !important;
+}
+@media(max-width: 767px) {
+    .data-column {
+      width: 20px;
+      top: 55px;
+      gap: 29px;
+      left: 20px;
+      font-size: 7px;
+      line-height: 1;
+   }
+   .chart-box.box.chart-vertical{
+    padding-left: 20px;
+   }
+   .chart-box.box {
+    padding: 7px 15px;
+  }
+  .chart-box.chart-vertical .chart-title{
+    margin-bottom: -40px !important;
+  }
+  .chart-box .chart-title{
+    padding: 7px 0 !important;
+  }
+  .chart-vertical canvas{
+    max-height: 300px;
+  }
+  .chart-value{
+    gap: 10px;
+  }
+  .chart-value p{
+    font-size: 7px !important;
+    line-height: 10px !important;
+  }
+  .chart-value p span{
+    width: 5px;
+    height: 5px;
+    margin-right: 3px;
+  }
+  .chart-box .chart-info .source, .chart-box .chart-info .design{
+    font-size: 6px !important;
+    line-height: 6px !important;
+  }
+	.chart-box .chart-info .source b{
+		font-size: 6px;
+	}
+  .chart-box .chart-info .design img{
+    height: 12px;
+    margin-left: 3px;
+  }
+  .chart-box .vertical-text{
+    font-size: 7px !important;
+    line-height: 10px !important;
+    left: 5px;
+  }
+  .chart-box .chart-info{
+    margin: 0;
+    padding: 5px 0;
+  }
+  .chart-vertical canvas{
+    min-height: 200px;
+  }
+  .chart-pie canvas{
+    max-height: 200px !important;
+  }
+  .chart-horizontal.chart-box .title-x{
+    font-size: 7px !important;
+    line-height: 10px !important;
+  }
+  #content .box-main-content .content-main .chart-horizontal.chart-box h3.title-x{
+    margin:20px 0 !important;
+  }
+  .chart-line canvas{
+    padding: 0;
+    margin-left: -15px;
+  }
+  .chart-line .data-column {
+    top: 55px;
+    gap: 20.5px;
+    left: 26px;
+  }
+	.chart-box.chart-horizontal .chart-info{
+		margin-top: 30px;
+	}
+}

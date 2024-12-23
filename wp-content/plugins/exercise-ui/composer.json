@@ -1,0 +1,7 @@
+{
+    "name": "vendorname/projectname",
+    "description": "A brief description of your project",
+    "require": {
+        "firebase/php-jwt": "^6.10"
+    }
+}

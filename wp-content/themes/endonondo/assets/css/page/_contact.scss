@@ -1,0 +1,233 @@
+.contact-main{
+	padding: 40px 0 120px;
+	.ed-title{
+		font-size: 36px;
+		line-height: 43px;
+	}
+	.contact-box{
+		padding-top: 40px;
+		h2{
+			font-size: 32px;
+			line-height: 39px;
+			margin-bottom: 16px;
+			font-weight: 600;
+		}
+		.contact-left{
+			width: 58%;
+			padding: 0 123px 0 calc(50vw - 646.5px);
+			p{
+				color: #313131;
+				margin-bottom: 24px;
+			}
+			h5{
+				color: #313131;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 600;
+				margin-bottom: 16px;
+				a{
+					color: #87AA14;
+					text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			.contact-form{
+				p{
+					margin-bottom: 0;
+				}
+				.wpcf7-not-valid-tip{
+				    color: #dc3232;
+				    margin-top: -10px;
+				    margin-bottom: 10px;
+				}
+				label{
+					margin-bottom: 5px;
+					font-size: 14px;
+					line-height: 22px;
+					font-weight: 400;
+					span{
+						color: #87AA14;
+					}
+				}
+				.form-ip, .form-textarea{
+					padding: 9px 10px;
+					font-size: 14px;
+					line-height: 22px;
+					color: #313131;
+					border: 1px solid #D4D5D4;
+					background: #fff;
+					-webkit-appearance: none !important;
+					font-family: 'Inter', sans-serif;
+					margin-bottom: 16px;
+					display: block;
+					width: 100%;
+					&::placeholder{
+						color: #313131;
+					}
+				}
+				.form-textarea{
+					height: 125px;
+					margin-bottom: 24px;
+				}
+				.form-submit{
+					width: 100%;
+					background: #101010;
+					border: 1px solid #404040;
+					text-align: center;
+					font-size: 16px;
+					line-height: 22px;
+					font-weight: 500;
+					color: #fff;
+					-webkit-appearance: none !important;
+					font-family: 'Inter', sans-serif;
+					padding: 10px;
+					cursor: pointer;
+					transition: all 0.3s;
+					-webkit-transition: all 0.3s;
+					&:hover{
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		.contact-right{
+			width: 42%;
+			padding: 40px;
+			
+			position: relative;
+			&:before{
+				background: url(../images/bg-author.png) #101010 no-repeat bottom 40px right/ auto 100%;
+				width: 100%;
+				height: 100%;
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0.5;
+			}
+			.contact-right-box{
+				max-width: 524px;
+				position: relative;
+			}
+			p{
+				font-size: 16px;
+				line-height: 28px;
+				margin-bottom: 16px;
+				color: #D4D5D4;
+				b{
+					font-weight: 500;
+					margin-bottom: 10px;
+					color: #fff;
+					display: block;
+				}
+				a{
+					color: #fff;
+					&:hover{
+						color: #87AA14;
+					}
+				}
+			}
+			.ct-info{
+				margin-bottom: 40px;
+				max-width: 345px;
+			}
+			.follow-list{
+				a{
+					display: flex;
+					margin-bottom: 16px;
+					font-size: 16px;
+					line-height: 28px;
+					color: #D4D5D4;
+					min-width: 170px;
+					margin-right: 24px;
+					align-items: center;
+					i{
+						font-size: 24px;
+						color: #fff;
+						margin-right: 8px;
+					}
+					&:hover,&:hover i{
+						color: #87AA14;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 1350px){
+	.contact-main .contact-box {
+		.contact-left{
+			padding-left: 20px;
+			padding-right: 50px;
+			width: 50%;
+		}
+		.contact-right{
+			width: 50%;
+		}
+	}
+}
+@media(max-width: 767px){
+	.contact-main{
+		padding: 40px 0;
+		.ed-title{
+			font-size: 28px;
+			line-height: 33px;
+			margin-bottom: 40px;
+		}
+		.contact-box{
+			padding: 0;
+			.contact-left{
+				padding: 0 16px 10px;
+				width: 100%;
+				p{
+					font-size: 14px;
+					line-height: 22px;
+				}
+				h5{
+					font-size: 10px;
+					line-height: 24px;
+					margin-bottom: 16px;
+				}
+			}
+			h2{
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 16px;
+			}
+			.contact-right{
+				width: 100%;
+				padding: 40px 24px;
+				&:before{
+					background: url(../images/sp-bg-contact.png) #101010 no-repeat bottom 30px right/auto 100%;
+				}
+				p{
+					font-size: 14px;
+					line-height: 22px;
+					b{
+						font-size: 16px;
+						margin-bottom: 8px;
+					}
+				}
+				.ct-info{
+					margin-bottom: 32px;
+				}
+				.follow-list {
+					margin-bottom: -16px;
+					a{
+						width: 50%;
+						margin: 0 0 16px;
+						font-size: 14px;
+						line-height: 22px;
+						min-width: auto;
+						i{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

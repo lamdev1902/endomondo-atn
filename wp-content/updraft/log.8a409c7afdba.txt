@@ -1,0 +1,280 @@
+0000.000 (0) Opened log file at time: Mon, 14 Aug 2023 10:53:33 +0000 on https://wordpress-873871-3793859.cloudwaysapps.com
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.9 WP: 6.3 PHP: 7.4.33 (fpm-fcgi, Linux 873871.cloudwaysapps.com 4.19.0-22-cloud-amd64 #1 SMP Debian 4.19.260-1 (2022-09-29) x86_64) MySQL: 10.4.20-MariaDB-1:10.4.20+maria~buster-log (max packet size=134217728) WPLANG: en_US Server: Apache/2.4.57 (Debian) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 23M | 4M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 13899.6 MB
+0000.010 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.013 (0) Semaphore (fd, wp_options) being initialised
+0000.022 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.026 (0) Set semaphore last lock (fd) time to 2023-08-14 10:53:33
+0000.029 (0) Semaphore lock (fd) complete
+0000.035 (0) Backup run: resumption=0, nonce=8a409c7afdba, file_nonce=8a409c7afdba begun at=1692010413 (0s ago), job type=backup
+0000.040 (0) Scheduling a resumption (1) after 300 seconds (1692010713) in case this run gets aborted
+0000.052 (0) Checking if we have a zip executable available
+0000.058 (0) Creation of backups of directories: beginning
+0000.066 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.112 (0) Total entities for the zip file: 576 directories, 3603 files (0 skipped as non-modified), 59 MB
+0000.118 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.123 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.128 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.133 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.138 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.143 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.147 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.152 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.157 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.162 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.165 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (21.3 MB, 3603 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.792 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1100 files added (on-disk size: 5879.7 KB)
+0001.797 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1200 files added (on-disk size: 5879.7 KB)
+0001.802 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1300 files added (on-disk size: 5879.7 KB)
+0001.807 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1400 files added (on-disk size: 5879.7 KB)
+0001.812 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1500 files added (on-disk size: 5879.7 KB)
+0001.817 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1600 files added (on-disk size: 5879.7 KB)
+0001.822 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1700 files added (on-disk size: 5879.7 KB)
+0001.827 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1800 files added (on-disk size: 5879.7 KB)
+0001.831 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 1900 files added (on-disk size: 5879.7 KB)
+0001.836 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2000 files added (on-disk size: 5879.7 KB)
+0001.839 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.6 MB, 3603 files batched, 1001 (2002) added so far); re-opening (prior size: 5879.7 KB)
+0002.925 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2100 files added (on-disk size: 10053.9 KB)
+0002.930 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2200 files added (on-disk size: 10053.9 KB)
+0002.934 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2300 files added (on-disk size: 10053.9 KB)
+0002.939 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2400 files added (on-disk size: 10053.9 KB)
+0002.945 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2500 files added (on-disk size: 10053.9 KB)
+0002.950 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2600 files added (on-disk size: 10053.9 KB)
+0002.955 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2700 files added (on-disk size: 10053.9 KB)
+0002.959 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2800 files added (on-disk size: 10053.9 KB)
+0002.964 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 2900 files added (on-disk size: 10053.9 KB)
+0002.969 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3000 files added (on-disk size: 10053.9 KB)
+0002.972 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (7.3 MB, 3603 files batched, 1001 (3003) added so far); re-opening (prior size: 10053.9 KB)
+0003.306 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3100 files added (on-disk size: 13070.5 KB)
+0003.311 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3200 files added (on-disk size: 13070.5 KB)
+0003.316 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3300 files added (on-disk size: 13070.5 KB)
+0003.321 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3400 files added (on-disk size: 13070.5 KB)
+0003.326 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3500 files added (on-disk size: 13070.5 KB)
+0003.331 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.tmp: 3600 files added (on-disk size: 13070.5 KB)
+0004.645 (0) Creating zip file manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.list-temp.tmp)
+0004.655 (0) Successfully created zip file manifest (size: 295627)
+0004.826 (0) Created plugins zip (0) - 17807.5 KB in 4.8 s (3746.2 KB/s) (sha1: 0dc14e964a33f87fd25e49e76c1e3e750bfe8ea7, sha256: 000a37a2debbf8d609e8460f61134178d51b819481c1040f189de8aaf778058f)
+0004.836 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0004.839 (0) No remote despatch: user chose no remote backup service
+0004.842 (0) Recording as successfully uploaded: backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip
+0004.846 (0) Deleting zip manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip.list.tmp)
+0004.851 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0004.853 (0) Number of backup sets in history: 0; groups (db): 1
+0004.855 (0) Number of backup sets in history: 0; groups (files): 1
+0004.858 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0004.869 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.880 (0) Total entities for the zip file: 95 directories, 500 files (0 skipped as non-modified), 29.9 MB
+0004.885 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.890 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.894 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 500 files batched, 259 (259) added so far); re-opening (prior size: 0 KB)
+0006.482 (0) A useful amount of data was added after this amount of zip processing: 2.4 s (normalised: 2.4 s, rate: 10562.4 KB/s)
+0006.488 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.4243550300598, normalised_time=2.4236978475837, max_time=6.4855241775513, data points known=1, old_max_bytes=26214400, new_max_bytes=64895217)
+0006.495 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.tmp: 300 files added (on-disk size: 14960.7 KB)
+0006.501 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.tmp: 400 files added (on-disk size: 14960.7 KB)
+0006.505 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.tmp: 500 files added (on-disk size: 14960.7 KB)
+0006.636 (0) Creating zip file manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.list-temp.tmp)
+0006.641 (0) Successfully created zip file manifest (size: 35158)
+0006.822 (0) Created themes zip (0) - 18883.8 KB in 1.9 s (9700.7 KB/s) (sha1: c036214bab28c2ff53b12e6d3800b9c0eade2f5e, sha256: 3e1ee6409eebe860fd436eb82e273f1ded3e3e30d72b56fbc36b79da402d6317)
+0006.831 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0006.834 (0) No remote despatch: user chose no remote backup service
+0006.835 (0) Recording as successfully uploaded: backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip
+0006.841 (0) Deleting zip manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip.list.tmp)
+0006.847 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0006.850 (0) Number of backup sets in history: 0; groups (db): 1
+0006.851 (0) Number of backup sets in history: 0; groups (files): 1
+0006.854 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0006.866 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0006.867 (0) Looking for candidates to backup in: /mnt/data/home/873871.cloudwaysapps.com/rqprvxgchp/public_html/wp-content/uploads
+0006.870 (0) finding files: 2023: adding to list (1)
+0006.873 (0) finding files: wpcf7_uploads: adding to list (2)
+0006.875 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0006.883 (0) Total entities for the zip file: 4 directories, 213 files (0 skipped as non-modified), 10.1 MB
+0006.887 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0006.892 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0006.938 (0) Creating zip file manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip.list-temp.tmp)
+0006.942 (0) Successfully created zip file manifest (size: 9934)
+0007.045 (0) Created uploads zip (0) - 10321.8 KB in 0.2 s (62839.6 KB/s) (sha1: e06b8ff5737d23e2102e9d9cdd15ce6f772c4dab, sha256: ca1ab1e943d33220eb54f3da3bddc0849de1fbcef455f3bc57d002374b4f4fef)
+0007.053 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0007.055 (0) No remote despatch: user chose no remote backup service
+0007.058 (0) Recording as successfully uploaded: backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip
+0007.064 (0) Deleting zip manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip.list.tmp)
+0007.070 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0007.072 (0) Number of backup sets in history: 0; groups (db): 1
+0007.075 (0) Number of backup sets in history: 0; groups (files): 1
+0007.078 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0007.090 (0) Beginning backup of other directories found in the content directory (index: 0)
+0007.094 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0007.095 (0) Looking for candidates to backup in: /mnt/data/home/873871.cloudwaysapps.com/rqprvxgchp/public_html/wp-content
+0007.099 (0) finding files: uploads: skipping: this is the uploads directory
+0007.101 (0) finding files: upgrade-temp-backup: adding to list (1)
+0007.103 (0) finding files: themes: skipping: this is the themes directory
+0007.107 (0) finding files: index.php: adding to list (2)
+0007.110 (0) finding files: upgrade: skipping: excluded by options
+0007.113 (0) finding files: updraft: skipping: this is the updraft directory
+0007.115 (0) finding files: plugins: skipping: this is the plugins directory
+0007.117 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0007.119 (0) finding files: advanced-cache.php: adding to list (3)
+0007.123 (0) finding files: cache: skipping: excluded by options
+0007.126 (0) finding files: mc_data: adding to list (4)
+0007.129 (0) finding files: breeze-config: adding to list (5)
+0007.131 (0) finding files: object-cache.php: adding to list (6)
+0007.134 (0) finding files: mu-plugins: adding to list (7)
+0007.143 (0) Total entities for the zip file: 47 directories, 159 files (0 skipped as non-modified), 1.7 MB
+0007.148 (0) Zip: backup_2023-08-14-1053_Endonondo_8a409c7afdba-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0007.265 (0) Creating zip file manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-others.zip.list-temp.tmp)
+0007.268 (0) Successfully created zip file manifest (size: 11730)
+0007.285 (0) Created others zip (0) - 443.3 KB in 0.1 s (3073.3 KB/s) (sha1: 4418e3bfe7107e56da1f2e81e02d13e5f382429f, sha256: 8f84864da9451a199588ded3c7eb16e7874716e17d7316b5a171a9a5ac159a3e)
+0007.294 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0007.296 (0) No remote despatch: user chose no remote backup service
+0007.298 (0) Recording as successfully uploaded: backup_2023-08-14-1053_Endonondo_8a409c7afdba-others.zip
+0007.303 (0) Deleting zip manifest (backup_2023-08-14-1053_Endonondo_8a409c7afdba-others.zip.list.tmp)
+0007.307 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0007.311 (0) Number of backup sets in history: 0; groups (db): 1
+0007.314 (0) Number of backup sets in history: 0; groups (files): 1
+0007.315 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0007.333 (0) Saving backup status to database (elements: 8)
+0007.338 (0) Beginning creation of database dump (WordPress DB)
+0007.342 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0007.358 (0) Table wp_options: Total expected rows (via COUNT): 262
+0007.359 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.369 (0) Table wp_options: Rows added in this batch (next record: 1092): 258 (uncompressed bytes in this segment=75368) in 0.02 seconds
+0007.382 (0) Table wp_options: finishing file(s) (2, 14.9 KB)
+0007.388 (0) Table wp_users: Total expected rows (via COUNT): 3
+0007.391 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.396 (0) Table wp_users: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1829) in 0.01 seconds
+0007.405 (0) Table wp_users: finishing file(s) (2, 0.8 KB)
+0007.413 (0) Table wp_usermeta: Total expected rows (via COUNT): 131
+0007.415 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.420 (0) Table wp_usermeta: Rows added in this batch (next record: 132): 131 (uncompressed bytes in this segment=16990) in 0.01 seconds
+0007.434 (0) Table wp_usermeta: finishing file(s) (2, 4 KB)
+0007.444 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0007.450 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=696) in 0.01 seconds
+0007.461 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0007.467 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0007.470 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.476 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2133) in 0.01 seconds
+0007.485 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0007.492 (0) Table wp_links: Total expected rows (via COUNT): 0
+0007.499 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1306) in 0.01 seconds
+0007.507 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0007.521 (0) Table wp_postmeta: Total expected rows (approximate): 7282
+0007.559 (0) Table wp_postmeta: Rows added in this batch (next record: 7626): 7143 (uncompressed bytes in this segment=581619) in 0.05 seconds
+0007.573 (0) Table wp_postmeta: finishing file(s) (2, 55.2 KB)
+0007.584 (0) Table wp_posts: Total expected rows (via COUNT): 308
+0007.587 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.614 (0) Table wp_posts: Rows added in this batch (next record: 402): 308 (uncompressed bytes in this segment=1505491) in 0.03 seconds
+0007.627 (0) Table wp_posts: finishing file(s) (2, 43 KB)
+0007.634 (0) Table wp_term_relationships: Total expected rows (approximate): 63
+0007.640 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 63 (uncompressed bytes in this segment=1570) in 0.01 seconds
+0007.651 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0007.662 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 11
+0007.666 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.672 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 14): 11 (uncompressed bytes in this segment=1598) in 0.01 seconds
+0007.685 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0007.695 (0) Table wp_termmeta: Total expected rows (via COUNT): 16
+0007.698 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.700 (0) Table wp_termmeta: Rows added in this batch (next record: 22): 16 (uncompressed bytes in this segment=1396) in 0.01 seconds
+0007.712 (0) Table wp_termmeta: finishing file(s) (2, 0.5 KB)
+0007.719 (0) Table wp_terms: Total expected rows (via COUNT): 11
+0007.722 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.724 (0) Table wp_terms: Rows added in this batch (next record: 14): 11 (uncompressed bytes in this segment=1110) in 0.01 seconds
+0007.735 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0007.743 (0) Table wp_bv_fw_requests: Total expected rows (via COUNT): 0
+0007.750 (0) Table wp_bv_fw_requests: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1386) in 0.01 seconds
+0007.758 (0) Table wp_bv_fw_requests: finishing file(s) (2, 0.5 KB)
+0007.764 (0) Table wp_bv_ip_store: Total expected rows (approximate): 6207
+0007.802 (0) Table wp_bv_ip_store: Rows added in this batch (next record: 6207): 6207 (uncompressed bytes in this segment=306457) in 0.04 seconds
+0007.811 (0) Table wp_bv_ip_store: finishing file(s) (2, 62.5 KB)
+0007.818 (0) Table wp_bv_lp_requests: Total expected rows (via COUNT): 1
+0007.822 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.827 (0) Table wp_bv_lp_requests: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1024) in 0.01 seconds
+0007.835 (0) Table wp_bv_lp_requests: finishing file(s) (2, 0.5 KB)
+0007.845 (0) Table wp_yoast_indexable: Total expected rows (via COUNT): 38
+0007.848 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.856 (0) Table wp_yoast_indexable: Rows added in this batch (next record: 48): 38 (uncompressed bytes in this segment=30833) in 0.02 seconds
+0007.868 (0) Table wp_yoast_indexable: finishing file(s) (2, 4.2 KB)
+0007.875 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 35
+0007.883 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 35 (uncompressed bytes in this segment=1350) in 0.01 seconds
+0007.891 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 0.5 KB)
+0007.897 (0) Table wp_yoast_migrations: Total expected rows (via COUNT): 24
+0007.899 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.906 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 24): 24 (uncompressed bytes in this segment=1265) in 0.01 seconds
+0007.915 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0007.922 (0) Table wp_yoast_primary_term: Total expected rows (via COUNT): 1
+0007.924 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.927 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=995) in 0.01 seconds
+0007.938 (0) Table wp_yoast_primary_term: finishing file(s) (2, 0.5 KB)
+0007.944 (0) Table wp_yoast_seo_links: Total expected rows (via COUNT): 186
+0007.947 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0007.953 (0) Table wp_yoast_seo_links: Rows added in this batch (next record: 196): 186 (uncompressed bytes in this segment=22934) in 0.01 seconds
+0007.963 (0) Table wp_yoast_seo_links: finishing file(s) (2, 1.5 KB)
+0007.967 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_options.table.tmpr1093.gz (1/20/fopen): adding to final database dump
+0007.970 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_options.table.gz (2/20/fopen): adding to final database dump
+0007.973 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_users.table.tmpr4.gz (3/20/fopen): adding to final database dump
+0007.975 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_users.table.gz (4/20/fopen): adding to final database dump
+0007.978 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_usermeta.table.tmpr133.gz (5/20/fopen): adding to final database dump
+0007.980 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_usermeta.table.gz (6/20/fopen): adding to final database dump
+0007.982 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_commentmeta.table.tmpr0.gz (7/20/fopen): adding to final database dump
+0007.985 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_commentmeta.table.gz (8/20/fopen): adding to final database dump
+0007.987 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_comments.table.tmpr2.gz (9/20/fopen): adding to final database dump
+0007.990 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_comments.table.gz (10/20/fopen): adding to final database dump
+0007.991 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_links.table.tmpr0.gz (11/20/fopen): adding to final database dump
+0007.994 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_links.table.gz (12/20/fopen): adding to final database dump
+0007.997 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_postmeta.table.tmpr7627.gz (13/20/fopen): adding to final database dump
+0007.999 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_postmeta.table.gz (14/20/fopen): adding to final database dump
+0008.002 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_posts.table.tmpr403.gz (15/20/fopen): adding to final database dump
+0008.005 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_posts.table.gz (16/20/fopen): adding to final database dump
+0008.007 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_term_relationships.table.tmpr100001.gz (17/20/fopen): adding to final database dump
+0008.010 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_term_relationships.table.gz (18/20/fopen): adding to final database dump
+0008.012 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_term_taxonomy.table.tmpr15.gz (19/20/fopen): adding to final database dump
+0008.014 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_term_taxonomy.table.gz (20/20/fopen): adding to final database dump
+0008.018 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_termmeta.table.tmpr23.gz (21/20/fopen): adding to final database dump
+0008.022 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_termmeta.table.gz (22/20/fopen): adding to final database dump
+0008.024 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_terms.table.tmpr15.gz (23/20/fopen): adding to final database dump
+0008.027 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_terms.table.gz (24/20/fopen): adding to final database dump
+0008.031 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_fw_requests.table.tmpr0.gz (25/20/fopen): adding to final database dump
+0008.034 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_fw_requests.table.gz (26/20/fopen): adding to final database dump
+0008.035 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_ip_store.table.tmpr6208.gz (27/20/fopen): adding to final database dump
+0008.039 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_ip_store.table.gz (28/20/fopen): adding to final database dump
+0008.042 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_lp_requests.table.tmpr2.gz (29/20/fopen): adding to final database dump
+0008.045 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_bv_lp_requests.table.gz (30/20/fopen): adding to final database dump
+0008.047 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_indexable.table.tmpr49.gz (31/20/fopen): adding to final database dump
+0008.050 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_indexable.table.gz (32/20/fopen): adding to final database dump
+0008.052 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_indexable_hierarchy.table.tmpr1001.gz (33/20/fopen): adding to final database dump
+0008.055 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_indexable_hierarchy.table.gz (34/20/fopen): adding to final database dump
+0008.058 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_migrations.table.tmpr25.gz (35/20/fopen): adding to final database dump
+0008.059 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_migrations.table.gz (36/20/fopen): adding to final database dump
+0008.063 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_primary_term.table.tmpr2.gz (37/20/fopen): adding to final database dump
+0008.066 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_primary_term.table.gz (38/20/fopen): adding to final database dump
+0008.067 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_seo_links.table.tmpr197.gz (39/20/fopen): adding to final database dump
+0008.070 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db-table-wp_yoast_seo_links.table.gz (40/20/fopen): adding to final database dump
+0008.074 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db.gz: finished writing out complete database file (192.7 KB)
+0008.088 (0) Total database tables backed up: 20 (backup_2023-08-14-1053_Endonondo_8a409c7afdba-db.gz, size: 197447, sha1: 2d9bc91d1cf06ff980aeec49bf57b7842f0bbd51, sha256: e4f6ae5e8efe10837560f544f2fd4a26af994042ee5776ab7d961ddb04c5f2fd)
+0008.102 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-plugins.zip: plugins: This file has already been successfully uploaded
+0008.104 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-themes.zip: themes: This file has already been successfully uploaded
+0008.106 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-uploads.zip: uploads: This file has already been successfully uploaded
+0008.109 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-others.zip: others: This file has already been successfully uploaded
+0008.111 (0) backup_2023-08-14-1053_Endonondo_8a409c7afdba-db.gz: db: This file has not yet been successfully uploaded: will queue
+0008.114 (0) Saving backup history. Total backup size: 46.5 MB
+0008.120 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0008.127 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0008.131 (0) No remote despatch: user chose no remote backup service
+0008.134 (0) Recording as successfully uploaded: backup_2023-08-14-1053_Endonondo_8a409c7afdba-db.gz
+0008.143 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0008.146 (0) Number of backup sets in history: 1; groups (db): 1
+0008.149 (0) Examining (for databases) backup set with group_id=0, nonce=8a409c7afdba, datestamp=1692010413 (Aug 14 2023 10:53:33)
+0008.151 (0) This backup set is the backup set just made, so will not be deleted.
+0008.151 (0) Number of backup sets in history: 1; groups (files): 1
+0008.154 (0) Examining (for files) backup set with nonce=8a409c7afdba, datestamp=1692010413 (Aug 14 2023 10:53:33)
+0008.154 (0) This backup set is the backup set just made, so will not be deleted.
+0008.155 (0) This backup set is the backup set just made, so will not be deleted.
+0008.155 (0) This backup set is the backup set just made, so will not be deleted.
+0008.155 (0) This backup set is the backup set just made, so will not be deleted.
+0008.156 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0008.158 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0008.164 (0) Resume backup (8a409c7afdba, 0): finish run
+0008.171 (0) Decremented the semaphore (fd) by 1
+0008.174 (0) Semaphore (fd) unlocked
+0008.177 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0008.185 (0) No email will/can be sent - the user has not configured an email address.
+0008.187 (0) The backup succeeded and is now complete
