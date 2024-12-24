@@ -517,7 +517,7 @@ section.exc-hero-section.tool .exc-container .tool-top {
 
 
 /* Enfit */
-.coming h1{
+.coming h1 {
     font-size: 48px !important;
     line-height: 54px !important;
 }
@@ -628,10 +628,12 @@ h2.tag-coming {
         opacity: 0;
         transform: translateY(30px);
     }
+
     50% {
         opacity: 1;
         transform: translateY(-10px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -641,8 +643,9 @@ h2.tag-coming {
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(30px); 
+        transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -653,6 +656,7 @@ h2.tag-coming {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -660,13 +664,13 @@ h2.tag-coming {
 
 /* Áp dụng cho tất cả phần tử trong .first__coming--content */
 .first__coming--content * {
-    opacity: 0; 
-    transform: translateY(-30px); 
+    opacity: 0;
+    transform: translateY(-30px);
     animation: fadeInDown 0.8s ease-out forwards;
 }
 
 /* Animation riêng cho ảnh trong .main */
-.first__coming--content .first-img.mb > div.main {
+.first__coming--content .first-img.mb>div.main {
     animation: bounceInUp 0.8s ease-out forwards;
     animation-delay: 1.4s;
 }
@@ -682,28 +686,30 @@ h2.tag-coming {
 
 /* Các div con trong .first-img.mb không dịch chuyển, chỉ ẩn và hiện */
 .first__coming--content .store,
-.first__coming--content .first-img.mb > div:nth-child(2),
-.first__coming--content .first-img.mb > div:nth-child(3),
-.first__coming--content .first-img.mb > div:nth-child(4) {
-    transform: translateY(0); 
+.first__coming--content .first-img.mb>div:nth-child(2),
+.first__coming--content .first-img.mb>div:nth-child(3),
+.first__coming--content .first-img.mb>div:nth-child(4) {
+    transform: translateY(0);
     animation: fadeIn 0.8s ease-out forwards;
-    animation-delay: 2s; /* Thời gian trễ cho các phần tử này */
-    opacity: 0; /* Ban đầu ẩn */
+    animation-delay: 2s;
+    /* Thời gian trễ cho các phần tử này */
+    opacity: 0;
+    /* Ban đầu ẩn */
 }
 
 .first__coming--content .store {
     animation-delay: 1s;
 }
 
-.first__coming--content .first-img.mb > div:nth-child(2) {
+.first__coming--content .first-img.mb>div:nth-child(2) {
     animation-delay: 1.8s;
 }
 
-.first__coming--content .first-img.mb > div:nth-child(3) {
+.first__coming--content .first-img.mb>div:nth-child(3) {
     animation-delay: 2.2s;
 }
 
-.first__coming--content .first-img.mb > div:nth-child(4) {
+.first__coming--content .first-img.mb>div:nth-child(4) {
     animation-delay: 2.6s;
 }
 
@@ -753,12 +759,12 @@ h2.tag-coming {
     height: 100%;
 }
 
-.third__coming--bottom .third_download:hover > img {
+.third__coming--bottom .third_download:hover>img {
     transform: translateY(17px);
     height: 94%;
 }
 
-.third__coming--bottom .third_create:hover > img {
+.third__coming--bottom .third_create:hover>img {
     transform: translateY(0);
 }
 
@@ -769,21 +775,21 @@ h2.tag-coming {
 
 .third__coming--bottom .it:nth-child(3) img,
 .third__coming--bottom .it:last-child img {
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
     height: 264px;
     transform: translateY(0) scale(1);
 }
 
-.third__coming--bottom .it:nth-child(3) > div,
-.third__coming--bottom .it:last-child > div {
-	width: 264px;
+.third__coming--bottom .it:nth-child(3)>div,
+.third__coming--bottom .it:last-child>div {
+    width: 264px;
     max-height: 264px;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -798,8 +804,8 @@ h2.tag-coming {
     height: 264px;
 }
 
-.third__coming--bottom .it:nth-child(3) > div::after {
-    position:absolute;
+.third__coming--bottom .it:nth-child(3)>div::after {
+    position: absolute;
     content: "";
     width: 80%;
     height: 75.56px;
@@ -812,21 +818,21 @@ h2.tag-coming {
     border-radius: 8px;
 }
 
-.third__coming--bottom .it:nth-child(3) > div:hover {
+.third__coming--bottom .it:nth-child(3)>div:hover {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
 }
 
-.third__coming--bottom .it:nth-child(3) > div:hover img {
+.third__coming--bottom .it:nth-child(3)>div:hover img {
     height: 364px;
     object-fit: cover;
 }
 
-.third__coming--bottom .it:last-child > div:hover img {
+.third__coming--bottom .it:last-child>div:hover img {
     border-radius: 8px;
     -webkit-transform: scale(1.2);
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .coming .fourth__coming {
@@ -1174,7 +1180,7 @@ h2.tag-coming {
     margin-bottom: 0;
 }
 
-.filter-section .apply a{
+.filter-section .apply a {
     width: 118px;
     text-align: center;
     padding: 0 12px;
@@ -1392,6 +1398,7 @@ h2.tag-coming {
     height: 36px;
     width: 110px;
 }
+
 .home .enfit-action a:first-child {
     border: 1px solid #fff;
     color: #fff !important;
@@ -1416,12 +1423,12 @@ h2.tag-coming {
     flex-wrap: wrap;
 }
 
-.section-header > p {
+.section-header>p {
     margin-bottom: 0;
     font-weight: 500;
 }
 
-#comments .section-header > a {
+#comments .section-header>a {
     display: block;
     text-align: center;
     line-height: 48px;
@@ -1463,17 +1470,17 @@ h2.tag-coming {
 .comment-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .comment-form .user-col,
 .comment-form .email-col {
-    flex: 1; 
+    flex: 1;
 }
 
 .comment-form .cmt-col,
 .comment-form .comment-form-cookies-consent {
-    flex-basis: 100%; 
+    flex-basis: 100%;
     margin-bottom: 0;
 }
 
@@ -1505,7 +1512,7 @@ h2.tag-coming {
     margin-bottom: 5px;
 }
 
-.comment-form div input, 
+.comment-form div input,
 .comment-form textarea {
     width: 100%;
     border: 1px solid var(--secondary-color-1);
@@ -1519,30 +1526,31 @@ h2.tag-coming {
 
 .comment-form textarea {
     padding: 12px;
+    height: 192px;
 }
 
 .comment-form .form-submit .btn {
-    background:#000;
-    color:#fff;
+    background: #000;
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
-    border:none;
+    border: none;
     border-radius: none;
     line-height: 48px;
     text-align: center;
     width: 176px;
 }
 
-#comments .commentlist > li {
+#comments .commentlist>li {
     margin-bottom: 20px;
     border-bottom: 1px solid var(--secondary-color-1);
 }
 
-#comments .commentlist > li > .children {
+#comments .commentlist>li>.children {
     margin-bottom: 0;
 }
 
-#comments > .children {
+#comments>.children {
     margin-bottom: 0px;
 }
 
@@ -1594,13 +1602,14 @@ h2.tag-coming {
     gap: 20px;
     align-items: center;
 }
+
 #comments .comment-meta a {
     font-size: 16px;
     font-weight: 500;
     color: #000;
 }
 
-#comments .comment-meta a p{
+#comments .comment-meta a p {
     margin-bottom: 0;
 }
 
@@ -1654,4 +1663,24 @@ h2.tag-coming {
 
 #comments .grid-item {
     margin-bottom: 0;
+}
+
+
+#comment-form .cmt-col label,
+#comment-form .user-col label,
+#comment-form .email-col label {
+    position: relative;
+    display:block;
+    width: fit-content
+}
+
+#comment-form .cmt-col label::after,
+#comment-form .user-col label::after,
+#comment-form .email-col label::after  {
+    position: absolute;
+    content: "*";
+    color: var(--primary-color-1);
+    top: 0;
+    right: -12px;
+    font-size: 18px;
 }

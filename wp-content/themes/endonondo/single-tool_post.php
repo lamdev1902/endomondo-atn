@@ -152,6 +152,11 @@ the_post();
 			</aside>
 		</section>
 	</article>
+	<?php if (comments_open()): ?>
+        <div class="container">
+            <?php comments_template(); ?>
+        </div>
+    <?php endif; ?>
 </main>
 <?php get_footer(); ?>
 <script>
