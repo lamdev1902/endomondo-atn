@@ -38,14 +38,14 @@ $aria_req = $req ? " aria-required='true'" : '';
 						'<label>Name</label>' .
 						'<p class="comment-form-author">' .
 						'<input placeholder="Your Name" id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) .
-						'" size="30"' . $aria_req . ' /></p></div>',
+						'" size="30"' . $aria_req . ' require /></p></div>',
 
 					'email' =>
 						'<div class="email-col">' .
 						'<label>Email</label>' .
 						'<p class="comment-form-email">' .
 						'<input placeholder="Your Email" id="email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) .
-						'" size="30"' . $aria_req . ' /></p></div>',
+						'" size="30"' . $aria_req . ' require /></p></div>',
 				);
 				$args = array(
 					'id_form' => 'comment-form',
@@ -74,7 +74,7 @@ $aria_req = $req ? " aria-required='true'" : '';
 	
 	<?php if (comments_open() && get_comments_number() > 2 && post_type_supports(get_post_type(), 'comments')): ?>
 	<div class="seeAll">
-		<a href="" id="seeCmt">See all comments</a>
+		<a href="#" id="seeCmt" data-post-id="<?php echo get_the_ID(); ?>" data-page="2">See all comments</a>
 	</div>
 	<?php endif;?>
 

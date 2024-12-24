@@ -377,8 +377,8 @@ function theme_mcs_scripts()
 	wp_enqueue_style('style-custom', get_template_directory_uri() . '/assets/css/custom.css', '', '1.4.6');
 	wp_enqueue_style('style-base', get_template_directory_uri() . '/assets/css/base.css', '', '1.3.5');
 	wp_enqueue_style('tool-css', get_template_directory_uri() . '/shortcode/calorie/assets/css/tool.css', '', '1.0.5');
-	wp_enqueue_style('style-element', get_template_directory_uri() . '/assets/css/element.css', '', '1.7.8');
-	wp_enqueue_style('style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', '', '1.8.6');
+	wp_enqueue_style('style-element', get_template_directory_uri() . '/assets/css/element.css', '', '1.7.9');
+	wp_enqueue_style('style-responsive', get_template_directory_uri() . '/assets/css/responsive.css', '', '1.8.7');
 	wp_enqueue_style('style-awesome', get_template_directory_uri() . '/assets/fonts/css/fontawesome.css');
 	wp_enqueue_style('style-solid', get_template_directory_uri() . '/assets/fonts/css/solid.css');
 	wp_enqueue_style('style-regular', get_template_directory_uri() . '/assets/fonts/css/regular.css');
@@ -476,7 +476,8 @@ function mytheme_comment($comment, $args, $depth)
 		  } ?>
 			<div class="flex section-header">
 				<div class="comment-author vcard"><?php
-				if ($args['avatar_size'] != 0) {
+				$comment_author_id = $comment->user_id;
+				if ($comment_author_id && user_can($comment_author_id, 'administrator') && $args['avatar_size'] != 0) {
 					echo get_avatar($comment, $args['avatar_size']);
 				}
 				printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()); ?>
@@ -502,21 +503,71 @@ function mytheme_comment($comment, $args, $depth)
 				<?php comment_text(); ?>
 			</div>
 		</div>
-		<div class="reply"><?php
-		comment_reply_link(
-			array_merge(
-				$args,
-				array(
-					'add_below' => $add_below,
-					'depth' => $depth,
-					'max_depth' => $args['max_depth']
+		<?php if ($depth < 3): ?>
+			<div class="reply"><?php
+			comment_reply_link(
+				array_merge(
+					$args,
+					array(
+						'add_below' => $add_below,
+						'depth' => $depth,
+						'max_depth' => $args['max_depth']
+					)
 				)
-			)
-		); ?>
-			<?php
-			if ('div' != $args['style']): ?>
+			); ?>
 			</div>
-			<?php
-			endif;
+		<?php endif;
 }
+
+add_action('wp_ajax_load_more_comments', 'load_more_comments');
+add_action('wp_ajax_nopriv_load_more_comments', 'load_more_comments');
+
+function load_more_comments()
+{
+	if (!isset($_POST['post_id']) || !isset($_POST['page'])) {
+		wp_send_json_error('Invalid data');
+	}
+
+	$post_id = intval($_POST['post_id']);
+	$page = intval($_POST['page']);
+	$comments_per_page = get_option('comments_per_page');
+	$displayed_ids = isset($_POST['displayed_ids']) ? array_map('intval', $_POST['displayed_ids']) : [];
+
+	$args = array(
+		'post_id' => $post_id,
+		'number' => 0,
+		'comment__not_in' => $displayed_ids,
+		'status' => 'approve',
+		'hierarchical' => 'false'
+	);
+	$comments = get_comments($args);
+
+	if (empty($comments)) {
+		wp_send_json_error('No more comments');
+	}
+
+	ob_start();
+	wp_list_comments(array(
+		'style' => 'ul',
+		'callback' => 'mytheme_comment',
+		'type' => 'all',
+		'short_ping' => true,
+		'max_depth' => 3
+	), $comments);
+	$output = ob_get_clean();
+
+	wp_send_json_success($output);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_load_more_comments_script');
+
+function enqueue_load_more_comments_script()
+{
+	wp_enqueue_script('load-more-comments', get_template_directory_uri() . '/assets/js/load-more-comments.js', array('jquery'), null, true);
+	wp_localize_script('load-more-comments', 'ajax_object', array(
+		'ajax_url' => admin_url('admin-ajax.php'),
+	));
+}
+
+
 ?>

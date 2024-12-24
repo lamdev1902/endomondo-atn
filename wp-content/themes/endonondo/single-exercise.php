@@ -630,9 +630,11 @@ $post_type = $post->post_type;
             </div>
         </aside>
     </div>
-    <div class="container">
-        <?php comments_template(); ?>
-    </div>
+    <?php if (comments_open()): ?>
+        <div class="container">
+            <?php comments_template(); ?>
+        </div>
+    <?php endif; ?>
 </main>
 <script>
     jQuery(function ($) {

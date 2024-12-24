@@ -409,6 +409,11 @@ $enable_fcgroup = get_field('enable_fcgroup', $postid);
             </div>
         </div>
     </div>
+    <?php if (comments_open()): ?>
+        <div class="container">
+            <?php comments_template(); ?>
+        </div>
+    <?php endif; ?>
 </main>
 <?php
 if (isset($couponid) && $couponid != '') {
